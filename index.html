@@ -1,570 +1,432 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-            rel="stylesheet"
-        />
-        <style>
-            body {
-                font-family: "Lato", sans-serif;
-            }
-        </style>
-    </head>
-    <body class="bg-[#181a1c] text-white">
-        <!-- Navbar -->
-        <div
-            class="flex items-center justify-between py-[6px] lg:py-[25px] px-5 lg:px-20 mx-auto sticky top-0 bg-[#181a1c] z-15 h-[56px] lg:h-[94px]"
-        >
-            <!-- Left Side Navbar -->
-            <div
-                class="hidden lg:flex flex items-center justify-center space-x-20"
-            >
-                <img src="assets/logo/logo.png" alt="Logo" />
-                <ul class="flex space-x-20 text-[18px] text-white">
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Film</a></li>
-                    <li><a href="#">Daftar Saya</a></li>
-                </ul>
-            </div>
 
-            <div class="flex lg:hidden items-center justify-center space-x-4">
-                <img src="assets/logo/mobile-logo.png" alt="Logo" class="w-5" />
-                <ul class="flex space-x-3 text-[10px] text-white">
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Film</a></li>
-                    <li><a href="#">Daftar Saya</a></li>
-                </ul>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+    <title>Beranda - Chill</title>
+</head>
 
-            <!-- Right Side Navbar -->
-            <div class="flex items-center gap-1 lg:gap-4">
-                <img
-                    src="assets/avatar/avatar-icon.png"
-                    alt="Avatar Icon"
-                    class="w-5 lg:w-10 rounded-full"
-                />
-                <img
-                    src="assets/icons/down-arrow.png"
-                    alt="Down Arrow"
-                    class="w-4 h-4"
-                />
-            </div>
+<body class="bg-[#181a1c] text-white">
+    <!-- Navbar -->
+    <div
+        class="flex items-center justify-between py-[6px] lg:py-[25px] px-5 lg:px-20 mx-auto sticky top-0 bg-[#181a1c] z-15 h-[56px] lg:h-[94px]">
+        <!-- Left Side Navbar -->
+        <div class="flex items-center justify-center hidden space-x-20 lg:flex">
+            <img src="assets/logo/logo.png" alt="Logo" />
+            <ul class="flex space-x-20 text-[18px] text-white">
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Daftar Saya</a></li>
+            </ul>
         </div>
 
-        <!-- Main Content -->
+        <div class="flex items-center justify-center space-x-4 lg:hidden">
+            <img src="assets/logo/mobile-logo.png" alt="Logo" class="w-5" />
+            <ul class="flex space-x-3 text-[10px] text-white">
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Daftar Saya</a></li>
+            </ul>
+        </div>
 
-        <!-- Hero Section -->
-        <div class="relative">
-            <img
-                src="assets/hero/hero-section-banner.png"
-                alt="Hero Section Banner"
-                class="w-full h-[225px] lg:h-[587px] object-cover"
-            />
-            <div
-                class="absolute inset-0 bg-gradient-to-b from-transparent to-[#181a1c]"
-            ></div>
-            <div
-                class="absolute inset-0 flex flex-col justify-end px-6 lg:px-20 pb-10 lg:pb-16"
-            >
-                <div class="max-w-full lg:max-w-xl space-y-3 lg:space-y-4">
-                    <h1 class="text-2xl lg:text-4xl font-bold">
-                        Duty After School
-                    </h1>
-                    <p class="text-xs lg:text-lg line-clamp-2 lg:line-clamp-3">
-                        Sebuah benda tak dikenal mengambil alih dunia. Dalam
-                        keputusasaan, Departemen Pertahanan mulai merekrut lebih
-                        banyak tentara, termasuk siswa sekolah menengah. Mereka
-                        pun segera menjadi pejuang garis depan dalam perang.
-                    </p>
-                    <div class="flex items-center justify-between gap-4 w-full">
-                        <div class="flex space-x-2">
-                            <button
-                                class="btn bg-[#0F1E93] w-[55px] h-[25px] lg:w-[93px] lg:h-[45px] rounded-[48px] text-xs lg:text-base"
-                            >
-                                Mulai
-                            </button>
-                            <button
-                                class="btn bg-[#22282A] w-[120px] h-[25px] lg:w-[180px] lg:h-[45px] rounded-[48px] text-xs lg:text-base flex items-center justify-center gap-2"
-                            >
-                                <img
-                                    src="assets/icons/info.png"
-                                    alt="Info Icon"
-                                    class="w-3 h-3"
-                                />
-                                Selengkapnya
-                            </button>
-                            <button
-                                class="btn border border-[#C1C2C4] w-[30px] h-[25px] lg:w-[52px] lg:h-[45px] rounded-[24px] text-xs lg:text-base"
-                            >
-                                18+
-                            </button>
-                        </div>
+        <!-- Right Side Navbar -->
+        <div class="relative flex items-center gap-1 lg:gap-4">
+            <img src="assets/avatar/avatar-icon.png" alt="Avatar Icon" class="w-5 rounded-full lg:w-10" id="avatar" />
+            <img src="assets/icons/down-arrow.png" alt="Down Arrow" class="w-4 h-4" id="downArrow" />
+            <div id="menu"
+                class="absolute top-12 right-4 bg-[#181A1C] rounded-[4px] min-w-[180px] border border-white/10 z-50 hidden">
+                <a href="#" class="flex items-center gap-3 px-5 py-3 text-blue-400 rounded-t-[4px] hover:bg-white/10">
+                    <img src="assets/icons/profile.svg" alt="Profile Icon" class="w-5 h-5" />
+                    Profil Saya
+                </a>
+                <a href="#" class="flex items-center gap-3 px-5 py-3 text-white hover:bg-white/10">
+                    <img src="assets/icons/star.svg" alt="Profile Icon" class="w-5 h-5 text-white" />
+                    Ubah Premium
+                </a>
+                <a href="#" class="flex items-center gap-3 px-5 py-3 text-white rounded-b-[4px] hover:bg-white/10">
+                    <img src="assets/icons/logout.svg" alt="Profile Icon" class="w-5 h-5 text-white" />
+                    Keluar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="assets/hero/hero-section-banner.png" alt="Hero Section Banner"
+            class="w-full h-[225px] lg:h-[587px] object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#181a1c]"></div>
+        <div class="absolute inset-0 flex flex-col justify-end px-6 pb-10 lg:px-20 lg:pb-16">
+            <div class="max-w-full space-y-3 lg:max-w-xl lg:space-y-4">
+                <h1 class="text-2xl font-bold lg:text-4xl">
+                    Duty After School
+                </h1>
+                <p class="text-xs lg:text-lg line-clamp-2 lg:line-clamp-3">
+                    Sebuah benda tak dikenal mengambil alih dunia. Dalam
+                    keputusasaan, Departemen Pertahanan mulai merekrut lebih
+                    banyak tentara, termasuk siswa sekolah menengah. Mereka
+                    pun segera menjadi pejuang garis depan dalam perang.
+                </p>
+                <div class="flex items-center justify-between w-full gap-4">
+                    <div class="flex space-x-2">
                         <button
-                            class="btn border border-[#C1C2C4] w-[24px] h-[25px] lg:w-[44px] lg:h-[44px] rounded-[19px] lg:rounded-full text-xs lg:text-base flex items-center justify-center"
-                        >
-                            <img
-                                src="assets/icons/mute.png"
-                                alt="Mute Icon"
-                                class="w-3 h-3 lg:w-4 lg:h-4"
-                            />
+                            class="btn bg-[#0F1E93] w-[55px] h-[25px] lg:w-[93px] lg:h-[45px] rounded-[48px] text-xs lg:text-base">
+                            Mulai
+                        </button>
+                        <button
+                            class="btn bg-[#22282A] w-[120px] h-[25px] lg:w-[180px] lg:h-[45px] rounded-[48px] text-xs lg:text-base flex items-center justify-center gap-2">
+                            <img src="assets/icons/info.png" alt="Info Icon" class="w-3 h-3" />
+                            Selengkapnya
+                        </button>
+                        <button
+                            class="btn border border-[#C1C2C4] w-[30px] h-[25px] lg:w-[52px] lg:h-[45px] rounded-[24px] text-xs lg:text-base">
+                            18+
                         </button>
                     </div>
+                    <button
+                        class="btn border border-[#C1C2C4] w-[24px] h-[25px] lg:w-[44px] lg:h-[44px] rounded-[19px] lg:rounded-full text-xs lg:text-base flex items-center justify-center">
+                        <img src="assets/icons/mute.png" alt="Mute Icon" class="w-3 h-3 lg:w-4 lg:h-4" />
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Resume Watching Section -->
-        <div class="px-5 py-5 lg:px-20 lg:py-10">
-            <h3 class="text-xl lg:text-2xl font-bold mb-4">
-                Melanjutkan Tonton Film
-            </h3>
-            <div class="relative">
-                <button
-                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-left.png" />
-                </button>
+    <!-- Resume Watching Section -->
+    <div class="px-5 py-5 lg:px-20 lg:py-10">
+        <h3 class="mb-4 text-xl font-bold lg:text-2xl">
+            Melanjutkan Tonton Film
+        </h3>
+        <div class="relative">
+            <button
+                class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-left.png" />
+            </button>
 
-                <button
-                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-right.png" />
-                </button>
-                <div
-                    class="flex items-center gap-4 overflow-auto scrollbar-none scroll-smooth"
-                >
-                    <img
-                        src="assets/movie/landscape/dont-look-up.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/landscape/allofus.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/landscape/bluelock.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/landscape/amancalledotto.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/landscape/avatar.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/landscape/fastfurious.png"
-                        alt="List Movie"
-                        class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover"
-                    />
-                </div>
+            <button
+                class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-right.png" />
+            </button>
+            <div class="flex items-center gap-4 overflow-auto scrollbar-none scroll-smooth w-full">
+                <img src="assets/movie/landscape/dont-look-up.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/landscape/allofus.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/landscape/bluelock.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/landscape/amancalledotto.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/landscape/avatar.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/landscape/fastfurious.png" alt="List Movie"
+                    class="w-[309px] h-[151px] lg:w-[302px] lg:h-[162px] rounded-md h-auto object-cover" />
             </div>
         </div>
+    </div>
 
-        <!-- Top Rating Film & Series Section -->
-        <div class="px-5 py-5 lg:px-20 lg:py-10">
-            <h3 class="text-xl lg:text-2xl font-bold mb-4">
-                Top Rating Film dan Series Hari ini
-            </h3>
-            <div class="relative group">
-                <button
-                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-left.png" />
-                </button>
+    <!-- Top Rating Film & Series Section -->
+    <div class="px-5 py-5 lg:px-20 lg:py-10">
+        <h3 class="mb-4 text-xl font-bold lg:text-2xl">
+            Top Rating Film dan Series Hari ini
+        </h3>
+        <div class="relative group">
+            <button
+                class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-left.png" />
+            </button>
 
-                <button
-                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-right.png" />
-                </button>
-                <div
-                    class="flex items-center gap-4 overflow-auto scrollbar-none"
-                >
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/suzume.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1"
-                        >
-                            <span class="text-[8px] lg:text-sm leading-none"
-                                >Episode Baru</span
-                            >
-                        </div>
-                    </div>
-                    <img
-                        src="assets/movie/portrait/jurassic.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/sonic2.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/allofus.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1"
-                        >
-                            <span class="text-[8px] lg:text-sm leading-none"
-                                >Episode Baru</span
-                            >
-                        </div>
-                    </div>
-                    <img
-                        src="assets/movie/portrait/bighero.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/bighero.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/bighero.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/bighero.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                </div>
-            </div>
-        </div>
-
-        <!-- Trending Film Section -->
-        <div class="px-5 py-5 lg:px-20 lg:py-10">
-            <h3 class="text-xl lg:text-2xl font-bold mb-4">Film Trending</h3>
-            <div class="relative">
-                <button
-                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-left.png" />
-                </button>
-
-                <button
-                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-right.png" />
-                </button>
-                <div
-                    class="flex items-center gap-4 overflow-auto scrollbar-none"
-                >
+            <button
+                class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-right.png" />
+            </button>
+            <div class="flex items-center gap-4 overflow-auto scrollbar-none w-full">
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/suzume.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
                     <div
-                        class="flex items-center gap-4 overflow-x-auto scrollbar-none"
-                    >
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/tomorrow.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                        class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1">
+                        <span class="text-[8px] lg:text-sm leading-none">Episode Baru</span>
+                    </div>
+                </div>
+                <img src="assets/movie/portrait/jurassic.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/sonic2.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/allofus.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                    <div
+                        class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1">
+                        <span class="text-[8px] lg:text-sm leading-none">Episode Baru</span>
+                    </div>
+                </div>
+                <img src="assets/movie/portrait/bighero.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/bighero.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/bighero.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/bighero.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Film Section -->
+    <div class="px-5 py-5 lg:px-20 lg:py-10">
+        <h3 class="mb-4 text-xl font-bold lg:text-2xl">Film Trending</h3>
+        <div class="relative">
+            <button
+                class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-left.png" />
+            </button>
+
+            <button
+                class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-right.png" />
+            </button>
+            <div class="flex items-center gap-4 overflow-auto scrollbar-none w-full">
+                <div class="flex items-center gap-4 overflow-x-auto scrollbar-none w-full">
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/tomorrow.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/quantumania.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/quantumania.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/guardian.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/guardian.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/amancalledotto.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/amancalledotto.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/littlemermaid.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/littlemermaid.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/littlemermaid.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/littlemermaid.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/littlemermaid.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/littlemermaid.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
-                        <div class="relative shrink-0">
-                            <img
-                                src="assets/movie/portrait/littlemermaid.png"
-                                alt="List Movie"
-                                class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                            />
-                            <div
-                                class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                            >
-                                <span
-                                    class="block text-[6px] lg:text-xs font-medium"
-                                    >Top</span
-                                >
-                                <span
-                                    class="block text-[6px] lg:text-lg font-bold"
-                                    >10</span
-                                >
-                            </div>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="assets/movie/portrait/littlemermaid.png" alt="List Movie"
+                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                        <div
+                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                            <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                            <span class="block text-[6px] lg:text-lg font-bold">10</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- New Releases Section -->
-        <div class="px-5 py-5 lg:px-20 lg:py-10">
-            <h3 class="text-xl lg:text-2xl font-bold mb-4">Rilis Baru</h3>
-            <div class="relative">
-                <button
-                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-left.png" />
+    <!-- New Releases Section -->
+    <div class="px-5 py-5 lg:px-20 lg:py-10">
+        <h3 class="mb-4 text-xl font-bold lg:text-2xl">Rilis Baru</h3>
+        <div class="relative">
+            <button
+                class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-left.png" />
+            </button>
+
+            <button
+                class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 hidden lg:flex items-center justify-center rounded-full bg-[#2F3334] text-white">
+                <img src="assets/icons/arrow-right.png" />
+            </button>
+            <div class="flex items-center gap-4 overflow-auto scrollbar-none w-full">
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/littlemermaid.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                    <div
+                        class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                        <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                        <span class="block text-[6px] lg:text-lg font-bold">10</span>
+                    </div>
+                </div>
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/dutyafter.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                    <div
+                        class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1">
+                        <span class="text-[8px] lg:text-sm leading-none">Episode Baru</span>
+                    </div>
+                </div>
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/bighero.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                    <div
+                        class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight">
+                        <span class="block text-[6px] lg:text-xs font-medium">Top</span>
+                        <span class="block text-[6px] lg:text-lg font-bold">10</span>
+                    </div>
+                </div>
+                <div class="relative shrink-0">
+                    <img src="assets/movie/portrait/allofus.png" alt="List Movie"
+                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                    <div
+                        class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1">
+                        <span class="text-[8px] lg:text-sm leading-none">Episode Baru</span>
+                    </div>
+                </div>
+                <img src="assets/movie/portrait/missing.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/missing.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/missing.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+                <img src="assets/movie/portrait/missing.png" alt="List Movie"
+                    class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        class="px-5 py-5 lg:px-20 lg:py-10 border-t space-y-[40px] border-[#E7E3FC3B] bg-[#181a1c] grid grid-cols-12">
+
+        <!-- Left Section: Logo & Copyright -->
+        <div class="col-span-12 lg:col-span-3 space-y-3">
+            <img src="assets/logo/logo-footer.png" alt="Logo" class="w-[163px] h-[44px]" />
+            <p class="text-xs text-[#E7E3FC99]">@2023 Chill All Rights Reserved.</p>
+        </div>
+
+        <!-- Middle Section: Genre -->
+        <div class="col-span-12 lg:col-span-9 flex flex-col lg:flex-row gap-[8px] w-full">
+            <div class="w-full lg:w-auto space-y-1 lg:space-y-0">
+                <button onclick="toggleAcc('genre')"
+                    class="flex items-center justify-between w-full text-left font-bold text-base text-white lg:cursor-default lg:pointer-events-none">
+                    <span class="text-base">Genre</span>
+                    <img id="icon-genre" src="assets/icons/chevron-right.png" alt="Arrow Right Icon"
+                        class="w-4 h-4 lg:hidden transition-transform duration-200" />
                 </button>
+                <div id="acc-genre"
+                    class="hidden lg:grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-x-12 lg:gap-y-0 mt-4 text-sm text-[#E7E3FC99]">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:text-white transition-colors">Aksi</a>
+                        <a href="#" class="hover:text-white transition-colors">Anak-anak</a>
+                        <a href="#" class="hover:text-white transition-colors">Anime</a>
+                        <a href="#" class="hover:text-white transition-colors">Britania</a>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:text-white transition-colors">Drama</a>
+                        <a href="#" class="hover:text-white transition-colors">Fantasi Ilmiah & Fantasi</a>
+                        <a href="#" class="hover:text-white transition-colors">Kejahatan</a>
+                        <a href="#" class="hover:text-white transition-colors">KDrama</a>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:text-white transition-colors">Komedi</a>
+                        <a href="#" class="hover:text-white transition-colors">Petualangan</a>
+                        <a href="#" class="hover:text-white transition-colors">Perang</a>
+                        <a href="#" class="hover:text-white transition-colors">Romantis</a>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:text-white transition-colors">Sains & Alam</a>
+                        <a href="#" class="hover:text-white transition-colors">Thriller</a>
+                    </div>
+                </div>
+            </div>
 
-                <button
-                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#2F3334] text-white"
-                >
-                    <img src="assets/icons/arrow-right.png" />
+            <!-- Right Section: Bantuan -->
+            <div class="w-full lg:w-auto space-y-1 lg:space-y-0">
+                <button onclick="toggleAcc('bantuan')"
+                    class="flex items-center justify-between w-full text-left font-bold text-base text-white lg:cursor-default lg:pointer-events-none">
+                    <span class="text-base">Bantuan</span>
+                    <img id="icon-bantuan" src="assets/icons/chevron-right.png" alt="Arrow Right Icon"
+                        class="w-4 h-4 lg:hidden transition-transform duration-200" />
                 </button>
-                <div
-                    class="flex items-center gap-4 overflow-auto scrollbar-none"
-                >
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/littlemermaid.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                        >
-                            <span
-                                class="block text-[6px] lg:text-xs font-medium"
-                                >Top</span
-                            >
-                            <span class="block text-[6px] lg:text-lg font-bold"
-                                >10</span
-                            >
-                        </div>
+                <div id="acc-bantuan" class="hidden lg:grid grid-cols-1 mt-4 text-sm text-[#E7E3FC99]">
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="hover:text-white transition-colors">FAQ</a>
+                        <a href="#" class="hover:text-white transition-colors">Kontak Kami</a>
+                        <a href="#" class="hover:text-white transition-colors">Privasi</a>
+                        <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
                     </div>
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/dutyafter.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1"
-                        >
-                            <span class="text-[8px] lg:text-sm leading-none"
-                                >Episode Baru</span
-                            >
-                        </div>
-                    </div>
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/bighero.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-0 right-1 lg:right-2 bg-[#B71F1D] text-white rounded-tr lg:rounded-tr-md rounded-bl lg:rounded-bl-md px-1 py-1 lg:px-3 lg:py-2 text-center leading-tight"
-                        >
-                            <span
-                                class="block text-[6px] lg:text-xs font-medium"
-                                >Top</span
-                            >
-                            <span class="block text-[6px] lg:text-lg font-bold"
-                                >10</span
-                            >
-                        </div>
-                    </div>
-                    <div class="relative shrink-0">
-                        <img
-                            src="assets/movie/portrait/allofus.png"
-                            alt="List Movie"
-                            class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                        />
-                        <div
-                            class="absolute top-2 left-2 lg:top-3 lg:left-3 inline-flex items-center justify-center bg-[#1B1F9E] text-white whitespace-nowrap rounded-xl lg:rounded-3xl py-1 px-1.5 gap-1 lg:py-1 lg:px-2.5 lg:gap-1"
-                        >
-                            <span class="text-[8px] lg:text-sm leading-none"
-                                >Episode Baru</span
-                            >
-                        </div>
-                    </div>
-                    <img
-                        src="assets/movie/portrait/missing.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/missing.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/missing.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
-                    <img
-                        src="assets/movie/portrait/missing.png"
-                        alt="List Movie"
-                        class="w-[95px] h-[145px] lg:w-[234px] lg:h-[365px] rounded-md h-auto object-cover"
-                    />
                 </div>
             </div>
         </div>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <div
-            class="grid grid-cols-12 space-y-10 lg:space-y-0 px-5 lg:px-20 py-5 lg:py-15"
-        >
-            <div class="col-span-12 md:col-span-4 space-y-[26px]">
-                <img
-                    src="assets/logo/logo-footer.png"
-                    alt="Logo"
-                    class="w-[163px] h-[44px]"
-                />
-                <p class="text-md">@2023 Chill All Rights Reserved.</p>
-            </div>
-            <div class="col-span-12 md:col-span-8 space-y-2">
-                <div class="flex items-center justify-between">
-                    <p class="text-md">Genre</p>
-                    <img
-                        src="assets/icons/chevron-right.png"
-                        alt="Arrow Right Icon"
-                    />
-                </div>
-                <div class="flex items-center justify-between">
-                    <p class="text-md">Bantuan</p>
-                    <img
-                        src="assets/icons/chevron-right.png"
-                        alt="Arrow Right Icon"
-                    />
-                </div>
-            </div>
-        </div>
-    </body>
+</body>
+
 </html>
+
+<script>
+    const avatar = document.getElementById("avatar");
+    const downArrow = document.getElementById("downArrow");
+    const menu = document.getElementById("menu");
+
+    avatar.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    downArrow.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    function toggleAcc(id) {
+        const body = document.getElementById("acc-" + id);
+        const icon = document.getElementById("icon-" + id);
+        const isOpen = !body.classList.contains("hidden");
+        body.classList.toggle("hidden", isOpen);
+        icon.style.transform = isOpen ? "" : "rotate(90deg)";
+    }
+</script>
