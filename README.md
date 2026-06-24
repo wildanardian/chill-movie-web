@@ -18,5 +18,7 @@ chill-movie-web/
 │   ├── avatar/             # avatar pengguna
 │   └── icons/               # icon-icon UI
 ├── index.html
+├── login.html
+├── register.html
 └── README.md
 ```
